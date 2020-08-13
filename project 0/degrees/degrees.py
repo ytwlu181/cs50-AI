@@ -102,7 +102,7 @@ def shortest_path(source, target):
     found_target = False
     while not found_target:
         if q.empty():
-            raise Exception("no solution")
+            return None
 
         temp_node = q.remove()
         seen.add(temp_node.state)
